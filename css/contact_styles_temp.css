@@ -1,0 +1,90 @@
+/* Contact Section */
+.section-subtitle {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    border: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* Make it circular as requested/implied by design commonality, though image shows square-ish/rounded icons, let's stick to consistent rounded look or maybe just icon color */
+    /* Actually image has specific icon style. Let's look at the uploaded image again. */
+    /* The uploaded image shows icons are just icons, maybe slightly colored. */
+    /* Let me check the image again. */
+    /* Icons are blue/teal. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    /* Optional: background circle */
+    /* background-color: rgba(12, 138, 152, 0.1); */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info .label {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 4px;
+}
+
+.contact-info .value {
+    font-weight: 500;
+    color: var(--heading-color);
+    font-size: 1rem;
+}
+
+/* Make Github span full width if it's the last odd item, but in the grid of 2,
+   we have 5 items: Email, Phone, Location, LinkedIn, Github.
+   So Github will be on a new row alone. We can make it span 2 columns.
+*/
+.contact-card:nth-last-child(1):nth-child(odd) {
+    grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card:nth-last-child(1):nth-child(odd) {
+        grid-column: span 1;
+    }
+}
