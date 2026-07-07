@@ -158,18 +158,20 @@ h6 {
 
 /* Hero Section */
 .hero {
-  height: 60vh;
+  min-height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
-  padding-top: 80px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   /* Offset for fixed navbar */
 }
 
 .hero-content h1 {
   font-size: 4rem;
+  margin-top: 40px;
   margin-bottom: 10px;
   letter-spacing: -1px;
 }
@@ -257,7 +259,7 @@ h6 {
 
 /* Sections Common */
 .section {
-  padding: 80px 0;
+  padding: 100px 0;
 }
 
 .section-title {
@@ -603,6 +605,110 @@ h6 {
   color: #475569;
   border: 1px solid #e2e8f0;
 }
+
+.project-header h3 a {
+  color: var(--heading-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.project-header h3 a:hover {
+  color: var(--primary-color);
+}
+
+.project-header h3 a i {
+  color: #94a3b8;
+  transition: var(--transition);
+}
+
+.project-header h3 a:hover i {
+  color: var(--primary-color);
+  transform: translate(2px, -2px);
+}
+/* Awards Section */
+.awards-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.award-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  border: 1px solid #e2e8f0;
+  transition: var(--transition);
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.award-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+}
+
+.award-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(12, 138, 152, 0.1) 0%, rgba(12, 138, 152, 0.2) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.award-icon i {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.award-content {
+  flex-grow: 1;
+}
+
+.award-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.award-header h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+.award-date {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  background-color: rgba(12, 138, 152, 0.1);
+  padding: 4px 12px;
+  border-radius: 50px;
+}
+
+.award-org {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.award-description {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
 /* Contact Section */
 .section-subtitle {
   text-align: center;
@@ -651,6 +757,7 @@ a.contact-card:hover {
   border-radius: 50%;
   font-size: 1.5rem;
   transition: var(--transition);
+  flex-shrink: 0;
 }
 
 a.contact-card:hover .contact-icon {
@@ -824,9 +931,20 @@ a.contact-card:hover .contact-info .value {
   .projects-grid {
     grid-template-columns: 1fr;
   }
+
+  /* Awards Responsive */
+  .award-card {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
 }
 
 @media (max-width: 480px) {
+  .section {
+    padding: 60px 0;
+  }
+
   .section-title {
     font-size: 2rem;
   }
