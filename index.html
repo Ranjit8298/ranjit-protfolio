@@ -4,60 +4,117 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Ranjit Kumar | Mobile App Developer - Flutter & React Native</title>
+	<title>Ranjit Kumar | Senior Mobile App Developer (Flutter & React Native)</title>
 	<meta name="description"
-		content="Portfolio of Ranjit Kumar, a Mobile App Developer specializing in Flutter, React Native, Node.js, and scalable cross-platform mobile solutions." />
+		content="Portfolio of Ranjit Kumar - Senior Mobile App Developer specializing in Flutter, React Native, SDK Development, Clean Architecture, and high-performance cross-platform applications." />
 	<link rel="stylesheet" href="css/style.css" />
-	<!-- Google Fonts -->
+	<!-- Google Fonts: Plus Jakarta Sans & Outfit -->
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
-	<!-- FontAwesome -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+		rel="stylesheet" />
+	<!-- FontAwesome Icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
-	<!-- Navigation -->
+	<!-- Background Ambient Glow Effects -->
+	<div class="ambient-glow glow-1"></div>
+	<div class="ambient-glow glow-2"></div>
+
+	<!-- Navigation Bar -->
 	<nav class="navbar">
-		<div class="container">
-			<a href="#" class="logo">Ranjit Kumar</a>
-			<ul class="nav-links">
-				<li><a href="#about">About</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#experience">Experience</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#awards">Awards</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-			<div class="hamburger">
-				<span></span>
-				<span></span>
-				<span></span>
+		<div class="container nav-container">
+			<a href="#hero" class="logo">
+				<span class="logo-badge">R</span>
+				<span>Ranjit<span class="gradient-text">.dev</span></span>
+			</a>
+
+			<div class="nav-menu">
+				<ul class="nav-links">
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#awards">Awards</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+
+				<div class="nav-actions">
+					<button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode"
+						title="Toggle theme">
+						<i class="fa-solid fa-moon"></i>
+						<i class="fa-solid fa-sun"></i>
+					</button>
+
+					<button class="hamburger" aria-label="Toggle navigation menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
 			</div>
 		</div>
 	</nav>
 
 	<!-- Hero Section -->
-	<header class="hero">
-		<div class="container hero-content">
-			<h1>Ranjit Kumar</h1>
-			<h2>Mobile App Developer &bull; Flutter & React Native</h2>
-			<p>Designing, developing, and shipping high-impact cross-platform mobile applications</p>
-
-			<div class="social-links">
-				<a href="mailto:ranjitkumarbgs61@gmail.com" aria-label="Email"><i
-						class="fa-regular fa-envelope"></i></a>
-				<a href="https://www.linkedin.com/in/ranjit-kumar-99141317b/" target="_blank" aria-label="LinkedIn"><i
-						class="fa-brands fa-linkedin-in"></i></a>
-				<a href="https://github.com/Ranjit8298" target="_blank" aria-label="GitHub"><i
-						class="fa-brands fa-github-alt"></i></a>
-				<a href="tel:+919110951615" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+	<header id="hero" class="hero">
+		<div class="container hero-wrapper">
+			<div class="status-pill reveal">
+				<span class="pulse-dot"></span>
+				<span>Available for high-impact mobile opportunities</span>
 			</div>
 
-			<div class="cta-buttons">
-				<a href="#projects" class="btn btn-primary">View My Work</a>
-				<a href="assets/resume.pdf" target="_blank" class="btn btn-outline">Download Resume <i
-						class="fa-solid fa-download"></i></a>
+			<h1 class="hero-title reveal">
+				Hi, I'm <span class="gradient-text">Ranjit Kumar</span>
+			</h1>
+
+			<h2 class="hero-subtitle reveal">
+				Senior Mobile App Developer &bull; Flutter & React Native
+			</h2>
+
+			<p class="hero-description reveal">
+				Architecting, developing, and shipping resilient, high-performance cross-platform mobile applications &
+				SDKs with clean code and intuitive user experiences.
+			</p>
+
+			<!-- Quick Tech Stack Badges -->
+			<div class="hero-tech-strip reveal">
+				<span class="hero-tech-tag"><i class="fa-brands fa-flutter"></i> Flutter</span>
+				<span class="hero-tech-tag"><i class="fa-brands fa-react"></i> React Native</span>
+				<span class="hero-tech-tag"><i class="fa-solid fa-code"></i> TypeScript</span>
+				<span class="hero-tech-tag"><i class="fa-solid fa-layer-group"></i> Dart</span>
+				<span class="hero-tech-tag"><i class="fa-brands fa-android"></i> Android</span>
+				<span class="hero-tech-tag"><i class="fa-brands fa-apple"></i> iOS</span>
+				<span class="hero-tech-tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
+			</div>
+
+			<div class="hero-cta reveal">
+				<a href="#projects" class="btn btn-primary">
+					Explore Featured Work <i class="fa-solid fa-arrow-right"></i>
+				</a>
+				<a href="https://github.com/Ranjit8298/ranjit-protfolio/blob/main/assets/resume.pdf" target="_blank"
+					class="btn btn-outline">
+					Download Resume <i class="fa-solid fa-download"></i>
+				</a>
+			</div>
+
+			<div class="social-links reveal">
+				<a href="mailto:ranjitkumarbgs61@gmail.com" class="social-btn" aria-label="Email" title="Email me">
+					<i class="fa-regular fa-envelope"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/ranjit-kumar-99141317b/" target="_blank" class="social-btn"
+					aria-label="LinkedIn" title="LinkedIn Profile">
+					<i class="fa-brands fa-linkedin-in"></i>
+				</a>
+				<a href="https://github.com/Ranjit8298" target="_blank" class="social-btn" aria-label="GitHub"
+					title="GitHub Profile">
+					<i class="fa-brands fa-github-alt"></i>
+				</a>
+				<a href="tel:+919110951615" class="social-btn" aria-label="Phone" title="Phone Call">
+					<i class="fa-solid fa-phone"></i>
+				</a>
 			</div>
 		</div>
 	</header>
@@ -65,11 +122,17 @@
 	<!-- About Section -->
 	<section id="about" class="section">
 		<div class="container">
-			<h2 class="section-title">About Me</h2>
-			<div class="about-content">
-				<div class="about-text">
-					<p>
-						Mobile App Developer with 4+ years’ experience designing, developing, and shipping
+			<div class="section-header reveal">
+				<span class="section-tag"><i class="fa-regular fa-user"></i> Profile</span>
+				<h2 class="section-title">About Me</h2>
+				<p class="section-subtitle">Bridging design, performance, and scalable mobile architecture</p>
+			</div>
+
+			<div class="about-grid">
+				<div class="about-card reveal">
+					<p class="about-bio">
+						Mobile App Developer with <strong>4+ years’ experience</strong> designing, developing, and
+						shipping
 						cross-platform apps using Flutter and React Native. Extensive expertise in Dart, TypeScript,
 						Redux, and Node.js with a proven track record of architecting scalable mobile solutions and
 						improving app performance (e.g. reduced load times by 40%). Strong collaborator, having led
@@ -77,277 +140,309 @@
 						(including backend APIs in Node.js/Express) to drive high-impact projects.
 					</p>
 
-					<div class="education-card">
-						<h3>Education</h3>
-						<h4>Bachelor of Technology (Computer Science & Engineering)</h4>
-						<p class="institution">Shivalik College of Engineering, Uttarakhand Technical University</p>
-						<p class="year">Dehradun, Uttarakhand • 2018 – 2022</p>
+					<div class="education-block">
+						<div class="edu-header">
+							<i class="fa-solid fa-graduation-cap"></i>
+							<span>Education Background</span>
+						</div>
+						<h3 class="edu-degree">Bachelor of Technology (Computer Science & Engineering)</h3>
+						<p class="edu-institution">Shivalik College of Engineering, Uttarakhand Technical University</p>
+						<p class="edu-meta">Dehradun, Uttarakhand &bull; 2018 – 2022</p>
 					</div>
 				</div>
-				<div class="stats-grid">
-					<div class="stat-card">
-						<h3>4+</h3>
-						<p>Years Experience</p>
+
+				<div class="stats-container reveal">
+					<div class="stat-box">
+						<div class="stat-num">4+</div>
+						<div class="stat-label">Years Experience</div>
+						<div class="stat-desc">Mobile Engineering & Architecture</div>
 					</div>
-					<div class="stat-card">
-						<h3>10+</h3>
-						<p>Apps Published</p>
+					<div class="stat-box">
+						<div class="stat-num">10+</div>
+						<div class="stat-label">Apps Published</div>
+						<div class="stat-desc">App Store & Google Play</div>
 					</div>
-					<div class="stat-card">
-						<h3>40%</h3>
-						<p>Load Time Reduction</p>
+					<div class="stat-box">
+						<div class="stat-num">40%</div>
+						<div class="stat-label">Performance Boost</div>
+						<div class="stat-desc">Optimized Latency & Render Times</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Skills Section -->
+	<!-- Technical Skills Section -->
 	<section id="skills" class="section alt-bg">
 		<div class="container">
-			<h2 class="section-title">Technical Skills</h2>
+			<div class="section-header reveal">
+				<span class="section-tag"><i class="fa-solid fa-laptop-code"></i> Expertise</span>
+				<h2 class="section-title">Technical Skills</h2>
+				<p class="section-subtitle">Core technologies and engineering practices I work with</p>
+			</div>
+
 			<div class="skills-grid">
 				<!-- Languages -->
-				<div class="skill-category">
-					<div class="cat-header">
-						<i class="fa-solid fa-code"></i>
+				<div class="skill-category-card reveal">
+					<div class="skill-cat-header">
+						<div class="cat-icon-wrapper">
+							<i class="fa-solid fa-code"></i>
+						</div>
 						<h3>Languages</h3>
 					</div>
-					<div class="tags">
-						<span>Dart (Flutter)</span>
-						<span>TypeScript</span>
-						<span>JavaScript</span>
-						<span>Node.js</span>
+					<div class="skill-tags">
+						<span class="skill-tag">Dart (Flutter)</span>
+						<span class="skill-tag">TypeScript</span>
+						<span class="skill-tag">JavaScript</span>
+						<span class="skill-tag">Node.js</span>
 					</div>
 				</div>
 
-				<!-- Frameworks -->
-				<div class="skill-category">
-					<div class="cat-header">
-						<i class="fa-solid fa-mobile-screen-button"></i>
+				<!-- Mobile Frameworks -->
+				<div class="skill-category-card reveal">
+					<div class="skill-cat-header">
+						<div class="cat-icon-wrapper">
+							<i class="fa-solid fa-mobile-screen-button"></i>
+						</div>
 						<h3>Mobile Frameworks</h3>
 					</div>
-					<div class="tags">
-						<span>Flutter</span>
-						<span>React Native</span>
-						<span>Android</span>
-						<span>iOS</span>
+					<div class="skill-tags">
+						<span class="skill-tag">Flutter</span>
+						<span class="skill-tag">React Native</span>
+						<span class="skill-tag">Android</span>
+						<span class="skill-tag">iOS</span>
 					</div>
 				</div>
 
 				<!-- State Management -->
-				<div class="skill-category">
-					<div class="cat-header">
-						<i class="fa-solid fa-diagram-project"></i>
+				<div class="skill-category-card reveal">
+					<div class="skill-cat-header">
+						<div class="cat-icon-wrapper">
+							<i class="fa-solid fa-diagram-project"></i>
+						</div>
 						<h3>State Management</h3>
 					</div>
-					<div class="tags">
-						<span>Riverpod 2</span>
-						<span>BLoC / Cubit</span>
-						<span>Redux Toolkit</span>
-						<span>Zustand</span>
-						<span>TanStack Query</span>
-						<span>Redux</span>
+					<div class="skill-tags">
+						<span class="skill-tag">Riverpod 2</span>
+						<span class="skill-tag">BLoC / Cubit</span>
+						<span class="skill-tag">Redux Toolkit</span>
+						<span class="skill-tag">Zustand</span>
+						<span class="skill-tag">TanStack Query</span>
+						<span class="skill-tag">Redux</span>
 					</div>
 				</div>
 
-				<!-- Navigation & UI -->
-				<div class="skill-category">
-					<div class="cat-header">
-						<i class="fa-solid fa-wand-magic-sparkles"></i>
-						<h3>Navigation & UI</h3>
+				<!-- Backend & Cloud -->
+				<div class="skill-category-card reveal">
+					<div class="skill-cat-header">
+						<div class="cat-icon-wrapper">
+							<i class="fa-solid fa-server"></i>
+						</div>
+						<h3>Backend & Cloud</h3>
 					</div>
-					<div class="tags">
-						<span>go_router</span>
-						<span>auto_route</span>
-						<span>React Navigation</span>
-						<span>Expo Router</span>
-						<span>Material 3</span>
-						<span>Cupertino Widgets</span>
-						<span>Reanimated 3</span>
-						<span>Gesture Handler</span>
-						<span>NativeWind</span>
+					<div class="skill-tags">
+						<span class="skill-tag">Express.js</span>
+						<span class="skill-tag">REST APIs</span>
+						<span class="skill-tag">Firebase Ecosystem</span>
+						<span class="skill-tag">MongoDB</span>
+						<span class="skill-tag">PostgreSQL</span>
 					</div>
 				</div>
 
-				<!-- APIs & Backend -->
-				<div class="skill-category">
-					<div class="cat-header">
-						<i class="fa-solid fa-server"></i>
-						<h3>APIs & Backend</h3>
+				<!-- Architecture -->
+				<div class="skill-category-card reveal">
+					<div class="skill-cat-header">
+						<div class="cat-icon-wrapper">
+							<i class="fa-solid fa-cubes"></i>
+						</div>
+						<h3>Architecture</h3>
 					</div>
-					<div class="tags">
-						<span>RESTful APIs</span>
-						<span>GraphQL</span>
-						<span>Node.js (Express)</span>
-						<span>Firebase</span>
-						<span>Supabase</span>
+					<div class="skill-tags">
+						<span class="skill-tag">Clean Architecture</span>
+						<span class="skill-tag">Feature-First</span>
+						<span class="skill-tag">MVVM</span>
+						<span class="skill-tag">MVC</span>
+						<span class="skill-tag">Modular Architecture</span>
 					</div>
 				</div>
 
-				<!-- Testing & CI/CD -->
-				<div class="skill-category">
-					<div class="cat-header">
-						<i class="fa-solid fa-vial-circle-check"></i>
-						<h3>Testing & CI/CD</h3>
+				<!-- CI/CD & Deployment -->
+				<div class="skill-category-card reveal">
+					<div class="skill-cat-header">
+						<div class="cat-icon-wrapper">
+							<i class="fa-solid fa-cloud-arrow-up"></i>
+						</div>
+						<h3>CI/CD & Deployment</h3>
 					</div>
-					<div class="tags">
-						<span>flutter_test</span>
-						<span>integration_test</span>
-						<span>Jest (RN Testing Library)</span>
-						<span>Detox</span>
-						<span>App Store Connect</span>
-						<span>Google Play Console</span>
-						<span>Codemagic</span>
-						<span>Fastlane</span>
+					<div class="skill-tags">
+						<span class="skill-tag">App Store Connect</span>
+						<span class="skill-tag">Google Play Console</span>
+						<span class="skill-tag">Codemagic</span>
+						<span class="skill-tag">Fastlane</span>
 					</div>
 				</div>
 
 				<!-- Dev Tools & Practices -->
-				<div class="skill-category">
-					<div class="cat-header">
-						<i class="fa-solid fa-screwdriver-wrench"></i>
+				<div class="skill-category-card reveal">
+					<div class="skill-cat-header">
+						<div class="cat-icon-wrapper">
+							<i class="fa-solid fa-screwdriver-wrench"></i>
+						</div>
 						<h3>Dev Tools & Practices</h3>
 					</div>
-					<div class="tags">
-						<span>Git / GitHub</span>
-						<span>Agile / Scrum</span>
-						<span>SOLID Principles</span>
-						<span>Clean Architecture</span>
-						<span>MVVM</span>
-						<span>Modular Architecture</span>
-						<span>Performance Profiling</span>
-						<span>SonarQube</span>
+					<div class="skill-tags">
+						<span class="skill-tag">Git / GitHub</span>
+						<span class="skill-tag">Agile / Scrum</span>
+						<span class="skill-tag">SOLID Principles</span>
+						<span class="skill-tag">Clean Architecture</span>
+						<span class="skill-tag">Performance Profiling</span>
+						<span class="skill-tag">SonarQube</span>
 					</div>
 				</div>
 
 				<!-- Notifications & Integrations -->
-				<div class="skill-category">
-					<div class="cat-header">
-						<i class="fa-solid fa-bell"></i>
+				<div class="skill-category-card reveal">
+					<div class="skill-cat-header">
+						<div class="cat-icon-wrapper">
+							<i class="fa-solid fa-bell"></i>
+						</div>
 						<h3>Integrations & Services</h3>
 					</div>
-					<div class="tags">
-						<span>FCM</span>
-						<span>OneSignal</span>
-						<span>Deep Linking</span>
-						<span>MixPanel</span>
-						<span>Shorebird</span>
-						<span>CodePush</span>
-						<span>Stripe</span>
-						<span>Razorpay</span>
-						<span>JWT Authentication</span>
+					<div class="skill-tags">
+						<span class="skill-tag">FCM</span>
+						<span class="skill-tag">OneSignal</span>
+						<span class="skill-tag">Deep Linking</span>
+						<span class="skill-tag">MixPanel</span>
+						<span class="skill-tag">Shorebird</span>
+						<span class="skill-tag">CodePush</span>
+						<span class="skill-tag">Stripe</span>
+						<span class="skill-tag">Razorpay</span>
+						<span class="skill-tag">JWT Authentication</span>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Experience Section -->
+	<!-- Work Experience Section -->
 	<section id="experience" class="section">
 		<div class="container">
-			<h2 class="section-title">Work Experience</h2>
-			<div class="timeline">
+			<div class="section-header reveal">
+				<span class="section-tag"><i class="fa-solid fa-briefcase"></i> Career Journey</span>
+				<h2 class="section-title">Work Experience</h2>
+				<p class="section-subtitle">Proven track record building enterprise and consumer apps</p>
+			</div>
+
+			<div class="experience-timeline">
 				<!-- Job 1 -->
-				<div class="timeline-item">
-					<div class="timeline-content">
-						<div class="job-header">
+				<div class="exp-item reveal">
+					<div class="exp-node"></div>
+					<div class="exp-card">
+						<div class="exp-header">
 							<div>
-								<h3>Mobile App Developer</h3>
-								<p class="company">
-									<i class="fa-solid fa-briefcase"></i> Acelucid Technologies Pvt. Ltd.
-								</p>
+								<h3 class="exp-role">Mobile App Developer</h3>
+								<div class="exp-company">
+									<i class="fa-solid fa-building"></i> Acelucid Technologies Pvt. Ltd.
+								</div>
 							</div>
-							<div class="job-meta">
-								<p>
-									<i class="fa-solid fa-location-dot"></i> Uttarakhand, India
-								</p>
-								<p>
-									<i class="fa-regular fa-calendar"></i> Nov 2022 – Jan 2026
-								</p>
+							<div class="exp-meta">
+								<span class="exp-badge">Nov 2022 – Jan 2026</span>
+								<span class="exp-location"><i class="fa-solid fa-location-dot"></i> Uttarakhand,
+									India</span>
 							</div>
 						</div>
-						<ul class="job-details">
+						<ul class="exp-bullets">
 							<li>
-								Built and maintained scalable Flutter and React Native applications using Clean
-								Architecture, MVVM, SOLID principles, and modular design patterns.
+								<i class="fa-solid fa-circle-check"></i>
+								<span>Built and maintained scalable Flutter and React Native applications using Clean
+									Architecture, MVVM, SOLID principles, and modular design patterns.</span>
 							</li>
 							<li>
-								Improved application performance by approximately 30% by optimizing state
-								management, rendering, image caching, and overall code efficiency.
+								<i class="fa-solid fa-circle-check"></i>
+								<span>Improved application performance by approximately 30% by optimizing state
+									management, rendering, image caching, and overall code efficiency.</span>
 							</li>
 							<li>
-								Created reusable components and structured project modules to make applications
-								easier to maintain and extend.
+								<i class="fa-solid fa-circle-check"></i>
+								<span>Created reusable components and structured project modules to make applications
+									easier to maintain and extend.</span>
 							</li>
 							<li>
-								Integrated Stripe and Razorpay payment gateways, handling payment flows and
-								transaction-related requirements.
+								<i class="fa-solid fa-circle-check"></i>
+								<span>Integrated Stripe and Razorpay payment gateways, handling payment flows and
+									transaction-related requirements.</span>
 							</li>
 							<li>
-								Implemented Firebase Cloud Messaging (FCM), OneSignal, deep linking,
-								authentication, analytics, and crash reporting across mobile applications.
+								<i class="fa-solid fa-circle-check"></i>
+								<span>Implemented Firebase Cloud Messaging (FCM), OneSignal, deep linking,
+									authentication, analytics, and crash reporting across mobile applications.</span>
 							</li>
 							<li>
-								Set up and maintained Fastlane pipelines for Android and iOS, reducing manual
-								release work and making deployments more consistent.
+								<i class="fa-solid fa-circle-check"></i>
+								<span>Set up and maintained Fastlane pipelines for Android and iOS, reducing manual
+									release work and making deployments more consistent.</span>
 							</li>
 							<li>
-								Managed Google Play Store and Apple App Store releases, including signing
-								configurations, build preparation, compliance requirements, and production
-								deployments.
+								<i class="fa-solid fa-circle-check"></i>
+								<span>Managed Google Play Store and Apple App Store releases, including signing
+									configurations, build preparation, compliance requirements, and production
+									deployments.</span>
 							</li>
 							<li>
-								Introduced SonarQube into the development workflow to improve code quality and
-								identify maintainability issues early.
+								<i class="fa-solid fa-circle-check"></i>
+								<span>Introduced SonarQube into the development workflow to improve code quality and
+									identify maintainability issues early.</span>
 							</li>
 							<li>
-								Worked closely with Product Managers, Backend Engineers, QA Engineers, and
-								Designers to build and deliver production-ready mobile features.
+								<i class="fa-solid fa-circle-check"></i>
+								<span>Worked closely with Product Managers, Backend Engineers, QA Engineers, and
+									Designers to build and deliver production-ready mobile features.</span>
 							</li>
 							<li>
-								Contributed to architecture discussions, technical planning, sprint estimation, and
-								code reviews, helping the team make practical technical decisions.
+								<i class="fa-solid fa-circle-check"></i>
+								<span>Contributed to architecture discussions, technical planning, sprint estimation,
+									and code reviews, helping the team make practical technical decisions.</span>
 							</li>
 						</ul>
 					</div>
 				</div>
 
 				<!-- Job 2 -->
-				<div class="timeline-item">
-					<div class="timeline-content">
-						<div class="job-header">
+				<div class="exp-item reveal">
+					<div class="exp-node"></div>
+					<div class="exp-card">
+						<div class="exp-header">
 							<div>
-								<h3>React Native Developer</h3>
-								<p class="company">
-									<i class="fa-solid fa-briefcase"></i> CFCS Cloud Solutions
-								</p>
+								<h3 class="exp-role">React Native Developer</h3>
+								<div class="exp-company">
+									<i class="fa-solid fa-building"></i> CFCS Cloud Solutions
+								</div>
 							</div>
-							<div class="job-meta">
-								<p>
-									<i class="fa-solid fa-location-dot"></i> Noida, India
-								</p>
-								<p>
-									<i class="fa-regular fa-calendar"></i> Feb 2022 – Oct 2022
-								</p>
+							<div class="exp-meta">
+								<span class="exp-badge">Feb 2022 – Oct 2022</span>
+								<span class="exp-location"><i class="fa-solid fa-location-dot"></i> Noida, India</span>
 							</div>
 						</div>
-						<ul class="job-details">
+						<ul class="exp-bullets">
 							<li>
-								Developed scalable React Native applications using TypeScript, focusing on clean,
-								reusable, and maintainable code.
+								<i class="fa-solid fa-circle-check"></i>
+								<span>Developed scalable React Native applications using TypeScript, focusing on clean,
+									reusable, and maintainable code.</span>
 							</li>
 							<li>
-								Used Redux Toolkit for predictable state management across application features and
-								user flows.
+								<i class="fa-solid fa-circle-check"></i>
+								<span>Used Redux Toolkit for predictable state management across application features
+									and user flows.</span>
 							</li>
 							<li>
-								Integrated REST APIs, authentication flows, and secure token management for reliable
-								communication with backend services.
+								<i class="fa-solid fa-circle-check"></i>
+								<span>Integrated REST APIs, authentication flows, and secure token management for
+									reliable communication with backend services.</span>
 							</li>
 							<li>
-								Improved UI responsiveness and application performance by optimizing rendering and
-								building reusable components.
+								<i class="fa-solid fa-circle-check"></i>
+								<span>Improved UI responsiveness and application performance by optimizing rendering and
+									building reusable components.</span>
 							</li>
 						</ul>
 					</div>
@@ -359,16 +454,91 @@
 	<!-- Projects Section -->
 	<section id="projects" class="section alt-bg">
 		<div class="container">
-			<h2 class="section-title">Featured Projects</h2>
+			<div class="section-header reveal">
+				<span class="section-tag"><i class="fa-solid fa-layer-group"></i> Portfolio</span>
+				<h2 class="section-title">Featured Projects</h2>
+				<p class="section-subtitle">Real-world production apps, SDKs, and platforms</p>
+			</div>
+
+			<!-- Interactive Filter Controls -->
+			<div class="projects-filter reveal">
+				<button class="filter-btn active" data-filter="all">All Projects</button>
+				<button class="filter-btn" data-filter="flutter">Flutter</button>
+				<button class="filter-btn" data-filter="react-native">React Native</button>
+				<button class="filter-btn" data-filter="sdk">SDK & Architecture</button>
+				<button class="filter-btn" data-filter="fintech">Fintech & SaaS</button>
+			</div>
+
 			<div class="projects-grid">
-				<!-- Project 1: Sole -->
-				<div class="project-card">
-					<div class="project-header">
-						<h3><a href="https://play.google.com/store/apps/details?id=com.au.app.soleapp&hl=en_IN"
-								target="_blank">Sole <i class="fa-solid fa-arrow-up-right-from-square"
-									style="font-size: 0.85rem; margin-left: 5px;"></i></a></h3>
-						<span class="project-type">Accounting & Invoicing Platform</span>
+				<!-- Project 1: Finspring FD SDK -->
+				<div class="project-card reveal" data-category="flutter react-native sdk fintech">
+					<div class="project-top">
+						<span class="project-badge-pill">SDK & Fintech</span>
 					</div>
+					<h3 class="project-title">Finspring FD SDK</h3>
+					<span class="project-category-desc">Fixed Deposit Investment SDK</span>
+					<ul class="project-features">
+						<li>
+							<i class="fa-solid fa-chevron-right"></i> Built a reusable Fixed Deposit SDK for both React
+							Native and Flutter, enabling fintech platforms to integrate Finspring’s FD investment
+							journey directly into their mobile applications.
+						</li>
+						<li>
+							<i class="fa-solid fa-chevron-right"></i> Developed end-to-end FD workflows including
+							product discovery, FD selection, customer onboarding, KYC flow, booking, payment
+							integration, booking status, and investment tracking.
+						</li>
+						<li>
+							<i class="fa-solid fa-chevron-right"></i> Designed reusable SDK components and API
+							integrations with proper authentication, error handling, callbacks, and configurable UI to
+							make the SDK easy to integrate across different host applications.
+						</li>
+						<li>
+							<i class="fa-solid fa-chevron-right"></i> Optimized the SDK for cross-platform consistency,
+							performance, maintainability, and seamless integration across Android and iOS applications.
+						</li>
+					</ul>
+					<div class="tech-stack">
+						<span>React Native</span>
+						<span>Flutter</span>
+						<span>TypeScript</span>
+						<span>Dart</span>
+						<span>SDK Development</span>
+						<span>REST APIs</span>
+						<span>API Integration</span>
+						<span>Fixed Deposit</span>
+						<span>KYC</span>
+						<span>Payment Integration</span>
+						<span>Authentication</span>
+						<span>Modular Architecture</span>
+						<span>Clean Architecture</span>
+						<span>Reusable Components</span>
+						<span>State Management</span>
+						<span>Android</span>
+						<span>iOS</span>
+						<span>Error Handling</span>
+						<span>Performance Optimization</span>
+						<span>SDK Versioning</span>
+					</div>
+				</div>
+
+				<!-- Project 2: Sole -->
+				<div class="project-card reveal" data-category="flutter fintech">
+					<div class="project-top">
+						<span class="project-badge-pill">Fintech App</span>
+						<a href="https://play.google.com/store/apps/details?id=com.au.app.soleapp&hl=en_IN"
+							target="_blank" class="project-link-btn" aria-label="Open Sole on Play Store"
+							title="View Store Listing">
+							<i class="fa-solid fa-arrow-up-right-from-square"></i>
+						</a>
+					</div>
+					<h3 class="project-title">
+						<a href="https://play.google.com/store/apps/details?id=com.au.app.soleapp&hl=en_IN"
+							target="_blank">
+							Sole
+						</a>
+					</h3>
+					<span class="project-category-desc">Accounting & Invoicing Platform</span>
 					<ul class="project-features">
 						<li>
 							<i class="fa-solid fa-chevron-right"></i> Built core accounting and invoicing workflows,
@@ -404,14 +574,23 @@
 					</div>
 				</div>
 
-				<!-- Project 2: Recipe Cup -->
-				<div class="project-card">
-					<div class="project-header">
-						<h3><a href="https://play.google.com/store/apps/developer?id=Recipe+Cup+Inc.&hl=en_IN"
-								target="_blank">Recipe Cup <i class="fa-solid fa-arrow-up-right-from-square"
-									style="font-size: 0.85rem; margin-left: 5px;"></i></a></h3>
-						<span class="project-type">Multi-Vendor Food Ordering Platform</span>
+				<!-- Project 3: Recipe Cup -->
+				<div class="project-card reveal" data-category="react-native">
+					<div class="project-top">
+						<span class="project-badge-pill">Food Delivery</span>
+						<a href="https://play.google.com/store/apps/developer?id=Recipe+Cup+Inc.&hl=en_IN"
+							target="_blank" class="project-link-btn" aria-label="Open Recipe Cup on Play Store"
+							title="View Store Listing">
+							<i class="fa-solid fa-arrow-up-right-from-square"></i>
+						</a>
 					</div>
+					<h3 class="project-title">
+						<a href="https://play.google.com/store/apps/developer?id=Recipe+Cup+Inc.&hl=en_IN"
+							target="_blank">
+							Recipe Cup
+						</a>
+					</h3>
+					<span class="project-category-desc">Multi-Vendor Food Ordering Platform</span>
 					<ul class="project-features">
 						<li>
 							<i class="fa-solid fa-chevron-right"></i> Developed React Native applications using
@@ -448,14 +627,75 @@
 					</div>
 				</div>
 
-				<!-- Project 3: Mind Mentor -->
-				<div class="project-card">
-					<div class="project-header">
-						<h3><a href="https://play.google.com/store/apps/details?id=com.acelucid.mind_mentor_pro&hl=en_IN"
-								target="_blank">Mind Mentor <i class="fa-solid fa-arrow-up-right-from-square"
-									style="font-size: 0.85rem; margin-left: 5px;"></i></a></h3>
-						<span class="project-type">SaaS EdTech Platform</span>
+				<!-- Project 4: HomZa Cart -->
+				<div class="project-card reveal" data-category="flutter">
+					<div class="project-top">
+						<span class="project-badge-pill">Multi-Role Ecosystem</span>
+						<a href="https://play.google.com/store/apps/developer?id=Homza+Cart&hl=en_IN" target="_blank"
+							class="project-link-btn" aria-label="Open HomZa Cart on Play Store"
+							title="View Store Listing">
+							<i class="fa-solid fa-arrow-up-right-from-square"></i>
+						</a>
 					</div>
+					<h3 class="project-title">
+						<a href="https://play.google.com/store/apps/developer?id=Homza+Cart&hl=en_IN" target="_blank">
+							HomZa Cart
+						</a>
+					</h3>
+					<span class="project-category-desc">Food, Grocery & Multi-Role Delivery (Customer, Vendor,
+						Rider)</span>
+					<ul class="project-features">
+						<li>
+							<i class="fa-solid fa-chevron-right"></i> Engineered a complete multi-app ecosystem for
+							Customers, Vendors, and Delivery Riders using Flutter, MVC architecture, and Cubit state
+							management.
+						</li>
+						<li>
+							<i class="fa-solid fa-chevron-right"></i> Implemented seamless ordering workflows for food,
+							groceries, and vegetables with advanced filtering (cuisine, price, location) and promotional
+							discount systems.
+						</li>
+						<li>
+							<i class="fa-solid fa-chevron-right"></i> Built real-time live order and rider tracking,
+							delivery route updates, and push notifications for order lifecycle milestones.
+						</li>
+						<li>
+							<i class="fa-solid fa-chevron-right"></i> Integrated multi-option secure payment gateways
+							(credit/debit cards, net banking, digital wallets) alongside instant one-tap dish/store
+							reordering.
+						</li>
+					</ul>
+					<div class="tech-stack">
+						<span>Flutter</span>
+						<span>Dart</span>
+						<span>Cubit</span>
+						<span>MVC</span>
+						<span>REST APIs</span>
+						<span>Real-Time Tracking</span>
+						<span>Google Maps</span>
+						<span>Payment Gateways</span>
+						<span>Push Notifications</span>
+						<span>Multi-Role Architecture</span>
+					</div>
+				</div>
+
+				<!-- Project 5: BeExpert.ai -->
+				<div class="project-card reveal" data-category="flutter saas">
+					<div class="project-top">
+						<span class="project-badge-pill">AI EdTech SaaS</span>
+						<a href="https://play.google.com/store/apps/details?id=com.acelucid.mind_mentor_pro&hl=en_IN"
+							target="_blank" class="project-link-btn" aria-label="Open BeExpert.ai on Play Store"
+							title="View Store Listing">
+							<i class="fa-solid fa-arrow-up-right-from-square"></i>
+						</a>
+					</div>
+					<h3 class="project-title">
+						<a href="https://play.google.com/store/apps/details?id=com.acelucid.mind_mentor_pro&hl=en_IN"
+							target="_blank">
+							BeExpert.ai
+						</a>
+					</h3>
+					<span class="project-category-desc">SaaS EdTech Platform</span>
 					<ul class="project-features">
 						<li>
 							<i class="fa-solid fa-chevron-right"></i> Developed scalable Flutter applications using Bloc
@@ -494,14 +734,23 @@
 					</div>
 				</div>
 
-				<!-- Project 4: Nutmeg Buyer -->
-				<div class="project-card">
-					<div class="project-header">
-						<h3><a href="https://play.google.com/store/apps/details?id=com.netsymm.buyer&hl=en_IN"
-								target="_blank">Nutmeg Buyer <i class="fa-solid fa-arrow-up-right-from-square"
-									style="font-size: 0.85rem; margin-left: 5px;"></i></a></h3>
-						<span class="project-type">B2B Mobile Application</span>
+				<!-- Project 6: Nutmeg Buyer -->
+				<div class="project-card reveal" data-category="flutter">
+					<div class="project-top">
+						<span class="project-badge-pill">B2B Commerce</span>
+						<a href="https://play.google.com/store/apps/details?id=com.netsymm.buyer&hl=en_IN"
+							target="_blank" class="project-link-btn" aria-label="Open Nutmeg Buyer on Play Store"
+							title="View Store Listing">
+							<i class="fa-solid fa-arrow-up-right-from-square"></i>
+						</a>
 					</div>
+					<h3 class="project-title">
+						<a href="https://play.google.com/store/apps/details?id=com.netsymm.buyer&hl=en_IN"
+							target="_blank">
+							Nutmeg Buyer
+						</a>
+					</h3>
+					<span class="project-category-desc">B2B Mobile Application</span>
 					<ul class="project-features">
 						<li>
 							<i class="fa-solid fa-chevron-right"></i> B2B mobile application enables retailers to
@@ -523,14 +772,21 @@
 					</div>
 				</div>
 
-				<!-- Project 5: Sygnal -->
-				<div class="project-card">
-					<div class="project-header">
-						<h3><a href="https://play.google.com/store/apps/details?id=com.spnetwork.hcc&gl=au"
-								target="_blank">Sygnal <i class="fa-solid fa-arrow-up-right-from-square"
-									style="font-size: 0.85rem; margin-left: 5px;"></i></a></h3>
-						<span class="project-type">Healthcare Platform</span>
+				<!-- Project 7: Sygnal -->
+				<div class="project-card reveal" data-category="flutter saas">
+					<div class="project-top">
+						<span class="project-badge-pill">Healthcare SaaS</span>
+						<a href="https://play.google.com/store/apps/details?id=com.spnetwork.hcc&gl=au" target="_blank"
+							class="project-link-btn" aria-label="Open Sygnal on Store" title="View Store Listing">
+							<i class="fa-solid fa-arrow-up-right-from-square"></i>
+						</a>
 					</div>
+					<h3 class="project-title">
+						<a href="https://play.google.com/store/apps/details?id=com.spnetwork.hcc&gl=au" target="_blank">
+							Sygnal
+						</a>
+					</h3>
+					<span class="project-category-desc">Healthcare Platform</span>
 					<ul class="project-features">
 						<li>
 							<i class="fa-solid fa-chevron-right"></i> Healthcare platform aligned with NDIS and Aged
@@ -550,14 +806,22 @@
 					</div>
 				</div>
 
-				<!-- Project 6: Fuji CSMS -->
-				<div class="project-card">
-					<div class="project-header">
-						<h3><a href="https://play.google.com/store/apps/details?id=com.fuji.cms&hl=en_IN"
-								target="_blank">Fuji CSMS <i class="fa-solid fa-arrow-up-right-from-square"
-									style="font-size: 0.85rem; margin-left: 5px;"></i></a></h3>
-						<span class="project-type">Mobile CSMS Application</span>
+				<!-- Project 8: Fuji CSMS -->
+				<div class="project-card reveal" data-category="react-native">
+					<div class="project-top">
+						<span class="project-badge-pill">Enterprise CSMS</span>
+						<a href="https://play.google.com/store/apps/details?id=com.fuji.cms&hl=en_IN" target="_blank"
+							class="project-link-btn" aria-label="Open Fuji CSMS on Play Store"
+							title="View Store Listing">
+							<i class="fa-solid fa-arrow-up-right-from-square"></i>
+						</a>
 					</div>
+					<h3 class="project-title">
+						<a href="https://play.google.com/store/apps/details?id=com.fuji.cms&hl=en_IN" target="_blank">
+							Fuji CSMS
+						</a>
+					</h3>
+					<span class="project-category-desc">Mobile CSMS Application</span>
 					<ul class="project-features">
 						<li>
 							<i class="fa-solid fa-chevron-right"></i> Mobile CSMS application for service request
@@ -577,12 +841,13 @@
 					</div>
 				</div>
 
-				<!-- Project 7: Rova -->
-				<div class="project-card">
-					<div class="project-header">
-						<h3>Rova</h3>
-						<span class="project-type">Agritech Mobile Application</span>
+				<!-- Project 9: Rova -->
+				<div class="project-card reveal" data-category="flutter">
+					<div class="project-top">
+						<span class="project-badge-pill">Agritech App</span>
 					</div>
+					<h3 class="project-title">Rova</h3>
+					<span class="project-category-desc">Agritech Mobile Application</span>
 					<ul class="project-features">
 						<li>
 							<i class="fa-solid fa-chevron-right"></i> Developed a cross-platform agritech mobile
@@ -611,10 +876,15 @@
 	<!-- Awards & Recognition Section -->
 	<section id="awards" class="section">
 		<div class="container">
-			<h2 class="section-title">Awards & Recognition</h2>
-			<div class="awards-grid">
-				<div class="award-card">
-					<div class="award-icon">
+			<div class="section-header reveal">
+				<span class="section-tag"><i class="fa-solid fa-award"></i> Honors</span>
+				<h2 class="section-title">Awards & Recognition</h2>
+				<p class="section-subtitle">Acknowledged for technical leadership and engineering excellence</p>
+			</div>
+
+			<div class="awards-wrapper">
+				<div class="award-card reveal">
+					<div class="award-icon-box">
 						<i class="fa-solid fa-trophy"></i>
 					</div>
 					<div class="award-content">
@@ -633,68 +903,76 @@
 		</div>
 	</section>
 
-	<!-- Get In Touch Section -->
+	<!-- Get In Touch / Contact Section -->
 	<section id="contact" class="section alt-bg">
 		<div class="container">
-			<h2 class="section-title">Get In Touch</h2>
-			<p class="section-subtitle">
-				Have a project in mind or want to discuss opportunities? Feel free to
-				reach out!
-			</p>
+			<div class="section-header reveal">
+				<span class="section-tag"><i class="fa-regular fa-paper-plane"></i> Contact</span>
+				<h2 class="section-title">Get In Touch</h2>
+				<p class="section-subtitle">
+					Have an interesting opportunity or project in mind? Let's connect and build something extraordinary!
+				</p>
+			</div>
 
 			<div class="contact-grid">
 				<!-- Email -->
-				<a href="mailto:ranjitkumarbgs61@gmail.com" class="contact-card">
-					<div class="contact-icon">
+				<div class="contact-card reveal" data-copy="ranjitkumarbgs61@gmail.com" title="Click to copy email">
+					<div class="contact-icon-wrapper">
 						<i class="fa-regular fa-envelope"></i>
 					</div>
 					<div class="contact-info">
-						<span class="label">Email</span>
-						<span class="value">ranjitkumarbgs61@gmail.com</span>
+						<span class="contact-label">Email</span>
+						<a href="mailto:ranjitkumarbgs61@gmail.com" class="contact-value"
+							onclick="event.stopPropagation()">ranjitkumarbgs61@gmail.com</a>
 					</div>
-				</a>
+					<span class="copy-tooltip"><i class="fa-regular fa-copy"></i></span>
+				</div>
 
 				<!-- Phone -->
-				<a href="tel:+919110951615" class="contact-card">
-					<div class="contact-icon">
+				<div class="contact-card reveal" data-copy="+919110951615" title="Click to copy phone">
+					<div class="contact-icon-wrapper">
 						<i class="fa-solid fa-phone"></i>
 					</div>
 					<div class="contact-info">
-						<span class="label">Phone</span>
-						<span class="value">+91 9110951615</span>
+						<span class="contact-label">Phone</span>
+						<a href="tel:+919110951615" class="contact-value" onclick="event.stopPropagation()">+91
+							9110951615</a>
 					</div>
-				</a>
+					<span class="copy-tooltip"><i class="fa-regular fa-copy"></i></span>
+				</div>
 
 				<!-- Location -->
-				<div class="contact-card">
-					<div class="contact-icon">
+				<div class="contact-card reveal">
+					<div class="contact-icon-wrapper">
 						<i class="fa-solid fa-location-dot"></i>
 					</div>
 					<div class="contact-info">
-						<span class="label">Location</span>
-						<span class="value">Dehradun, Uttarakhand (Onsite / Hybrid / Remote)</span>
+						<span class="contact-label">Location</span>
+						<span class="contact-value">Dehradun, Uttarakhand (Onsite / Hybrid / Remote)</span>
 					</div>
 				</div>
 
 				<!-- LinkedIn -->
-				<a href="https://www.linkedin.com/in/ranjit-kumar-99141317b/" target="_blank" class="contact-card">
-					<div class="contact-icon">
+				<a href="https://www.linkedin.com/in/ranjit-kumar-99141317b/" target="_blank"
+					class="contact-card reveal" title="Visit LinkedIn Profile">
+					<div class="contact-icon-wrapper">
 						<i class="fa-brands fa-linkedin-in"></i>
 					</div>
 					<div class="contact-info">
-						<span class="label">LinkedIn</span>
-						<span class="value">ranjit-kumar-99141317b</span>
+						<span class="contact-label">LinkedIn</span>
+						<span class="contact-value">ranjit-kumar-99141317b</span>
 					</div>
 				</a>
 
 				<!-- GitHub -->
-				<a href="https://github.com/Ranjit8298" target="_blank" class="contact-card">
-					<div class="contact-icon">
+				<a href="https://github.com/Ranjit8298" target="_blank" class="contact-card reveal"
+					title="Visit GitHub Profile">
+					<div class="contact-icon-wrapper">
 						<i class="fa-brands fa-github-alt"></i>
 					</div>
 					<div class="contact-info">
-						<span class="label">GitHub</span>
-						<span class="value">github.com/Ranjit8298</span>
+						<span class="contact-label">GitHub</span>
+						<span class="contact-value">github.com/Ranjit8298</span>
 					</div>
 				</a>
 			</div>
@@ -705,39 +983,45 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="footer-content">
-				<div class="footer-logo">
+				<div class="footer-brand">
 					<h2>Ranjit Kumar</h2>
-					<p>Crafting high-impact mobile and digital experiences.</p>
+					<p>Crafting high-impact cross-platform mobile apps, SDKs, and digital solutions.</p>
 				</div>
 				<div class="footer-links">
-					<h3>Quick Links</h3>
-					<ul>
-						<li><a href="#about">About</a></li>
-						<li><a href="#skills">Skills</a></li>
-						<li><a href="#experience">Experience</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#awards">Awards</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
+					<h3>Quick Navigation</h3>
+					<div class="footer-nav">
+						<a href="#about">About</a>
+						<a href="#skills">Skills</a>
+						<a href="#experience">Experience</a>
+						<a href="#projects">Projects</a>
+						<a href="#awards">Awards</a>
+						<a href="#contact">Contact</a>
+					</div>
 				</div>
 				<div class="footer-social">
-					<h3>Connect</h3>
-					<div class="social-icons">
-						<a href="mailto:ranjitkumarbgs61@gmail.com" aria-label="Email"><i
+					<h3>Connect Online</h3>
+					<div class="social-links">
+						<a href="mailto:ranjitkumarbgs61@gmail.com" class="social-btn" aria-label="Email"><i
 								class="fa-regular fa-envelope"></i></a>
-						<a href="https://www.linkedin.com/in/ranjit-kumar-99141317b/" target="_blank"
+						<a href="https://www.linkedin.com/in/ranjit-kumar-99141317b/" target="_blank" class="social-btn"
 							aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-						<a href="https://github.com/Ranjit8298" target="_blank" aria-label="GitHub"><i
-								class="fa-brands fa-github-alt"></i></a>
+						<a href="https://github.com/Ranjit8298" target="_blank" class="social-btn"
+							aria-label="GitHub"><i class="fa-brands fa-github-alt"></i></a>
 					</div>
 				</div>
 			</div>
 			<div class="footer-bottom">
-				<p>&copy; 2026 Ranjit Kumar. All rights reserved.</p>
+				<p>&copy; 2026 Ranjit Kumar. Built with passion for high-performance mobile engineering.</p>
 			</div>
 		</div>
 	</footer>
 
+	<!-- Floating Back to Top Button -->
+	<button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">
+		<i class="fa-solid fa-arrow-up"></i>
+	</button>
+
+	<!-- Main JavaScript -->
 	<script src="js/main.js"></script>
 </body>
 
